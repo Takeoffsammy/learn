@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <title>about developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9K+qNFURSX+ccKLEIR" crossorigin="anonymous"/>
+  </head>
+  <body>
+    
+  <div class="aboutwrapper">
+    <div class="about-left">
+      <div class="about-left-content">
+      </div>
+        <div class="shadow">
+          <div class="about-img">
+            <img src="a.jpg" width="250" height="250"> 
+          </div>
+        </div>
+        <h2>takeoff<br>sammy</h2>
+        <h3>project manager</h3>
+    </div>
+    <ul class="icons">
+     <li><img src="b.jpg" width="20" height="20"></li> 
+     <li><img src="c.jpg" width="20" height="20"></li> 
+     <li><img src="d.jpg" width="20" height="20"></li> 
+   </ul>
+  </div>
+  </div>
+  <div class="about-right">
+    <h1>Hi<span>!</span></h1>
+    <h2>here is what i am and what i do</h2>
+  <div class="about-btns">
+    <button type="button" class="btn-btn-pink">resume</button>
+    <button type="button" class="btn-btn-white">projects</button>
+  </div>
+  <div class="about-para">
+    <p>hey there users i am a web developer and i do this for fun</p>
+    <details>
+      <summary>read more</summary>
+      <p><footer class="footer">
+
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <h4>company</h4>
+        <ul> 
+        
+          <li><a href="https://takeoffsammy.github.io/sam">about us</a></li>
+          <li><a href="https://takeoffsammy.github.io/samnjenga">our services</a></li>
+          <li><a href="https://takeoffsammy.github.io/classic">privacy policy</a></li>
+          <li><a href="https://takeoffsammy.github.io/sammy">affiliate program</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>get help</h4>
+        <ul>
+          <li><a href="https://takeoffsammy.github.io/sammynjenga">FAQ</a></li>
+          <li><a href="#">shipping</a></li>
+          <li><a href="#">returns</a></li>
+          <li><a href="#">order status</a></li>
+          <li><a href="#">payment options</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>online shop</h4>
+        <ul>
+          <li><a href="#">watch</a></li>
+          <li><a href="#">bags</a></li>
+          <li><a href="#">shoed</a></li>
+          <li><a href="#">dress</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>follow us</h4>
+        <div class="social-links">
+      <a href="#">facebook</a>
+      <a href="#">instagram</a>
+      <a href="#">YouTube</a>
+      <a href="#">tiktok</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p>takeoff sammy © 2022 | All rights reserved</p>
+</footer></p>
+    </details>
+  </div>
+  
+  </div>
+   <ul class="mobile-list">
+     <a href="index.html"><li><img src="2.jpg" width="20" height="20"></li><p>Home</p></a>
+ <a href="index9.html"><li><img src="6.jpg" width="20" height="20"><p>Market Place</p></li></a>
+ <a href="index7.html"><li><img src="5.jpg" width="20" height="20"><p>Upload</p></li></a>
+  <a href="index2.html"><li><img src="1.jpg" width="20" height="20"><p>About us</p></li></a>
+  <a href="index3.html"><li><img src="4.jpg" width="20" height="20"><p>Help</p></li></a>
+     
+   </ul>
+  </body>
+</html>
+</form><style>/* reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'poppins, Sans-Serif;
+}
+.about-wrapper{
+  height: 100vh;
+}
+.about-left{
+  background: #ff00a9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 55vh;
+}
+.about-left-content > div{
+  background: #ff00c0;
+  padding: 4rem 4rem 2.5rem 5rem;
+  text-align: center;
+}
+.about-left-content{
+  box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+  -webkit-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+}
+.about-img{
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+}
+.shadow{
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  cursor: pointer;
+}
+.shadow::after{
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -20px;
+  height: 7px;
+  width: 50px;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+.shadow:hover .about-img{
+  transform: translateY(-10px);
+}
+.shadow:hover::after{
+  opacity: 1;
+}
+.about-left-content h2{
+  font-size: 2rem;
+  margin: 2.2rem 0 0.6rem 0;
+  line-height: 1.2;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #edffec;
+}
+
+.about-right h1{
+  font-size: 1000;
+  color: #2000ff;
+  align-items: center;
+  text-align: center;
+}
+.about-right h1 span{
+  color: #ff0000;
+}
+.about-right h2{
+    font-size: 1000;
+  color: #00ccff;
+}
+.about-right button{
+  text-align: center;
+  background-color: #b6ff00;
+  color: #ff0048;
+  align-items: center;
+}
+.about-right summary{
+  text-align: center;
+  background-color: #ff00d1;
+  color: #fff;
+  text-align: center;
+}
+@media only screen and (max-width: 800px){
+  .navbar .desktop-list{
+    display: none;
+  }
+  .mobile-list{
+  background: rgba(0,0,0,0.5);
+    display: block;
+    color: whitesmoke;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+  }
+  .mobile-list img{
+    font-size: 7vmin;
+    cursor: pointer;
+  }
+  .mobile-list li:hover img{
+  background-color: rgb(5, 5, 5, 49);
+  }
+}
+</style>

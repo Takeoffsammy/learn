@@ -1,0 +1,129 @@
+<div class="container">
+  <div class="card">
+    <h3>Upload Files</h3>
+    <div class="drop_box">
+      <header>
+        <h4>Select File here</h4>
+      </header>
+      <p>Files Supported: PDF, TEXT, DOC , DOCX</p>
+<input type="file" id="file-uploader" accept=".doc,.docx,.pdf">
+    </div>
+
+  </div>
+</div>
+   <ul class="mobile-list">
+ <a href="index.html"><li><img src="2.jpg" width="20" height="20"></li><p>Home</p></a>
+ <a href="index9.html"><li><img src="6.jpg" width="20" height="20"><p>Market Place</p></li></a>
+ <a href="index7.html"><li><img src="5.jpg" width="20" height="20"><p>Upload</p></li></a>
+ <a href="index2.html"><li><img src="1.jpg" width="20" height="20"><p>About us</p></li></a>
+  <a href="index3.html"><li><img src="4.jpg" width="20" height="20"><p>Help</p></li></a>
+     
+   </ul>
+   
+
+</form><style>/* reset */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+p{
+  font-size: 13;
+}
+.container {
+  height: 94vh;
+  width: 94%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: #fcfcfc;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  width: 600px;
+  height: 260px;
+  background-color: #ffffff;
+  padding: 10px 30px 40px;
+}
+
+.drop_box {
+  margin: 10px 0;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 3px dotted #a3a3a3;
+  border-radius: 5px;
+}
+
+.drop_box h4 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2e2e2e;
+}
+
+.drop_box p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: #a3a3a3;
+}
+
+input{
+  text-decoration: none;
+  background-color: #005af0;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:hover{
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #005af0;
+  padding: 10px 20px;
+  border: none;
+  outline: 1px solid #010101;
+}
+.form input {
+  margin: 10px 0;
+  width: 100%;
+  background-color: #e2e2e2;
+  border: none;
+  outline: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+}
+@media only screen and (max-width: 800px){
+  .navbar .desktop-list{
+    display: none;
+  }
+  .mobile-list{
+  background: rgba(0,0,0,0.5);
+    display: block;
+    color: whitesmoke;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+  }
+  .mobile-list img{
+    font-size: 7vmin;
+    cursor: pointer;
+  }
+  .mobile-list li:hover img{
+  background-color: rgb(5, 5, 5, 49);
+  }
+}
+</style>

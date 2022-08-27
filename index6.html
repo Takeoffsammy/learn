@@ -1,0 +1,60 @@
+  <title>upload section</title>
+<div>
+  <h1>Can select only .png and .jpg files</h1>
+  <input type="file" id="file-uploader" accept=".jpg, .png" multiple>
+  <p>Upload files and see the output in browser console</p>
+</div>
+   <ul class="mobile-list">
+ <a href="index.html"><li><img src="2.jpg" width="20" height="20"></li><p>Home</p></a>
+ <a href="index9.html"><li><img src="6.jpg" width="20" height="20"><p>Market Place</p></li></a>
+ <a href="index7.html"><li><img src="5.jpg" width="20" height="20"><p>Upload</p></li></a>
+ <a href="index2.html"><li><img src="1.jpg" width="20" height="20"><p>About us</p></li></a>
+  <a href="index3.html"><li><img src="4.jpg" width="20" height="20"><p>Help</p></li></a>
+     
+   </ul>
+</form><style>/* reset */
+p{
+  font-size: 13;
+}
+html {
+  height: 100%;
+}
+
+body {
+  background: #000000;
+  color: #FFFFFF;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto Mono', monospace;
+}
+@media only screen and (max-width: 800px){
+  .navbar .desktop-list{
+    display: none;
+  }
+  .mobile-list{
+  background: rgba(0,0,0,0.5);
+    display: block;
+    color: whitesmoke;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+  }
+  .mobile-list img{
+    font-size: 7vmin;
+    cursor: pointer;
+  }
+  .mobile-list li:hover img{
+  background-color: rgb(5, 5, 5, 49);
+  }
+}
+</style>
